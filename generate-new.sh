@@ -15,6 +15,6 @@ grep -RiIl 'feature_id' | xargs sed -i "s/feature_id/$1/g"
 
 cd ../../
 
-echo "| $2 | ghcr.io/lee-orr/rusty-dev-containers/$1:0 | $3 |" >> README.md
+echo "| $2 | ghcr.io/mjohnsonengr/devcontainers-rust/$1:0 | $3 |" >> README.md
 
 echo ".github/workflows/test.yaml" | xargs sed -i "s/# NEXT/- $1\n          # NEXT/g"
