@@ -18,32 +18,8 @@ jobs:
       matrix:
         features:
           - cargo-watch
-          - cargo-expand
           - cargo-binstall
-          - wasm32-unknown-unknown
-          - wasm-bindgen-cli
-          - mprocs
-          - bacon
-          - zellij
-          - fermyon-spin
-          - wasmcloud
-          - cosmonic
-          - helix
-          - cargo-bundle
-          - cargo-mobile
-          - cargo-audit
-          - cargo-make
-          - cargo-deny
-          - cargo-nextest
-          - honggfuzz
-          - spin-message-trigger
           - dioxus
-          - cargo-web
-          - wasm-server-runner
-          - dexterous_developer
-          - rust_windows_msvc
-          - sccache
-          - cargo-llvm-cov
           # NEXT
         baseImage:
           - debian:latest
@@ -65,32 +41,8 @@ jobs:
       matrix:
         features:
           - cargo-watch
-          - cargo-expand
           - cargo-binstall
-          - wasm32-unknown-unknown
-          - wasm-bindgen-cli
-          - mprocs
-          - bacon
-          - zellij
-          - fermyon-spin
-          - wasmcloud
-          - cosmonic
-          - helix
-          - cargo-bundle
-          - cargo-mobile
-          - cargo-audit
-          - cargo-make
-          - cargo-deny
-          - cargo-nextest
-          - honggfuzz
-          - spin-message-trigger
           - dioxus
-          - cargo-web
-          - wasm-server-runner
-          - dexterous_developer
-          - rust_windows_msvc
-          - sccache
-          - cargo-llvm-cov
           # NEXT
     steps:
       - uses: actions/checkout@v3
