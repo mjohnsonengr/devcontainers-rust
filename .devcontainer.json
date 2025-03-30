@@ -21,5 +21,7 @@
         "ghcr.io/devcontainers/features/docker-in-docker:2": {}
     },
     "remoteUser": "node",
-    "updateContentCommand": "npm install -g @devcontainers/cli"
+    "updateContentCommand": "npm install -g @devcontainers/cli",
+    // https://stackoverflow.com/a/78645926/1405720
+    "postAttachCommand": "sudo chown -R node /workspaces" 
 }
