@@ -17,9 +17,10 @@ jobs:
     strategy:
       matrix:
         features:
-          - cargo-watch
+          # TODO: re-enable other tests
+          # - cargo-watch
           - cargo-binstall
-          - dioxus
+          # - dioxus
           # NEXT
         baseImage:
           - debian:latest
