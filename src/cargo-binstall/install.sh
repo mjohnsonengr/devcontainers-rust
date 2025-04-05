@@ -5,6 +5,8 @@ PACKAGES=${PACKAGES:-""}
 
 CARGO_PACKAGES=("${PACKAGES//,/ }")
 
+umask 002
+
 if ! (which rustup > /dev/null && which cargo > /dev/null); then
     which curl > /dev/null || (apt update && apt install curl -y -qq)
     curl --proto '=https' --tlsv1.2 -sSf https://sh.rustup.rs | sh -s -- -y
@@ -20,5 +22,4 @@ if [ -z "${PACKAGES}" ]; then
     exit 0
 fi
 
-umask 002
 cargo binstall -y --force --locked $CARGO_PACKAGES
