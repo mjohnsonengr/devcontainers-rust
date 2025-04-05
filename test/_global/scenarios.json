@@ -2,8 +2,7 @@
     "ensure_rustlang_group": {
         "image": "mcr.microsoft.com/devcontainers/rust:1-1-bullseye",
         "features": {
-            "cargo-binstall": {},
-            "cargo-watch": {}
+            "cargo-binstall": {}
         }
     }
 }
